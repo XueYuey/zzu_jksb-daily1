@@ -8,7 +8,7 @@ import utils  # 自定义工具库
 import daka  # 打卡模块
 # import private_info #
 import os
-
+url = 'http://www.pushplus.plus/send'
 # 账号 密码等信息 Actions部署
 id = os.environ["id"]
 pwd = os.environ["pwd"]
