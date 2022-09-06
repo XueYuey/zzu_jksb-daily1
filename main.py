@@ -6,6 +6,7 @@
 import const  # 自定义常量库
 import utils  # 自定义工具库
 import daka  # 打卡模块
+import requests
 # import private_info #
 import os
 url = 'http://www.pushplus.plus/send'
