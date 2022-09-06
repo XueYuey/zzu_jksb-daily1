@@ -325,10 +325,10 @@ def sign_in(id, pwd, name="Turing", check_today=1):
     # 如果今日填报过就退出填报，直接返回msg
     if nodes[0].text == "今日您已经填报过了":
         logging.info(name + ": " + id + ":打卡成功\n")
-        return name + ": 恭喜您，" + nodes[0].text
+        return "恭喜您，" + nodes[0].text
     else:
         logging.info(name + ": " + id + ":打卡失败\n")
-        return name + ": 很遗憾，今日打卡失败！请先自行打卡"
+        return "很遗憾，今日打卡失败！请先自行打卡"
 
     r.close()
     del (r)
